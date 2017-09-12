@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,400,700|Raleway:700');
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  min-width: 300px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+img{
+  max-width: 100%;
+  height: auto;
+  
+}
+
+/**********************HEADER***************************/
+
+
+    .header {
+  width: 100%;
+  position: relative;
+  background: #004769 url('../img/mainbg.jpg');
+  background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+@media (max-width: 452px) {
+  .header{
+    padding: 0 0 30px 0;
+  }
+}
+
+.gadget{
+  text-transform: uppercase;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.sidenav .gadget {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav .gadget1{
+  font-size: 50px;
+}
+
+.sidenav .gadget:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    left: 150px;
+    font-size: 36px;
+    margin-right: 50px;
+}
+
+#main {
+  display: none;
+  color: #fff;
+    transition: margin-right .5s;
+    padding: 20px;
+}
+
+@media (max-width: 855px){
+#main {
+  display:block;
+}
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.container {
+  max-width: 1100px;
+  height: 100%;
+ margin: 0 auto;
+}
+
+.logo{
+  padding: 0 40px;
+}
+
+@media (max-width: 854px){
+.logo{
+padding: 20px 0 0 50px;
+
+}
+}
+
+.header__navigation {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+}
+
+ @media (max-width: 854px) {
+      .header__navigation {
+        flex-direction: column; } }
+
+.header__ul {
+  padding: 0;
+  display: flex;
+}
+
+@media (max-width: 854px) {
+      .header__ul {
+        text-align: center;
+        flex-direction: column; } }
+
+@media (max-width: 854px) {
+    .header__ul {
+      display: none; } }
+
+.header__list {
+  list-style: none;
+  padding: 20px;
+}
+
+@media (max-width: 854px) {
+  .header__list{
+    padding: 10px;
+  }
+}
+
+  .header__list:not(:first-child) {
+    margin-left: 20px; }
+
+.header__link {
+  font-family: 'Lato';
+  color: #fffffe;
+  font-size: 13.92px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: left;
+  transform: scaleY(1.0054);
+  text-decoration: none;
+}
+
+
+/****************JUMBO*********************/
+
+.jumbo {
+  margin: 50px 0 45px 0;
+  text-align: center;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.jumbo__title {
+  font-family: 'Raleway';
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  margin: 10px 0 0 0;
+  text-transform: uppercase;
+}
+
+.jumbo__line{
+  margin: 30px 0 0 0;
+}
+
+.line{
+  width: 86px;
+  height: 2px;
+  background: #ffffff;
+
+}
+
+.line--black{
+  background: #222222;
+}
+
+.jumbo__text {
+  color: #fffefe;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 35px 0 0 0;
+}
+
+.header__scroll {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 45px;
+  left: 48.5%;
+  margin: 0;
+}
+
+@media (max-width: 480px){
+  .header__scroll{
+    left: 45%;
+    bottom: 10px;
+  }
+}
+
+.header__scroll:hover {
+  opacity: .6;
+}
+
+
+/************OUR SERVICES*******************/
+
+.services {
+  background: #ffffff;
+  height: 100%;
+  margin: 110px 0 0 0;
+  color: #222222;
+}
+
+.services__title {
+  font-family: 'Raleway';
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+
+.services__list{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-right: 50px;
+}
+
+@media(max-width: 800px){
+  .services__list{
+    margin-left: 255px;
+    flex-direction: column;
+  }
+}
+
+.services__item {
+padding: 50px 0;
+  text-align: center;
+}
+
+    @media (max-width:800px){
+       .services__item{
+         margin-left: -250px;
+     }
+    }
+
+.services__item:hover{
+  opacity: 0.8;
+}
+
+.services__article {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.services__article--lower1{
+  margin: 40px 0 0 0;
+}
+
+.services__article--lower2{
+  margin: 60px 0 0 0;
+}
+
+.services__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.services__text--lower1{
+  margin: 25px 0 0 0;
+}
+
+.services__text--lower2{
+  margin: 21px 0 0 0;
+}
+
+/*********************IPHONE**********************/
+
+.aboutus {
+   width: 100%;
+  background: url('../img/section3bg.jpg') 50% 50% no-repeat;
+  background-size: cover;  
+}
+
+.aboutus__list{
+  display: flex;
+  justify-content: space-between;
+    margin: 0 0 -3px 0;
+  padding: 0;
+}
+
+@media(max-width: 800px){
+  .aboutus__list{
+flex-direction: column;
+align-items: center;
+padding: 0 20px;
+}
+}
+
+.aboutus__info {
+  color: #ffffff;
+  list-style: none;
+}
+
+.aboutus__title {
+  padding: 120px 0 0 0;
+  font-size: 44.67px;
+  font-weight: 400;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+
+.aboutus__text {
+  font-size: 22px;
+  font-weight: 100;
+  line-height: 28px;
+}
+
+.aboutus__link {
+  color: #ffffff;
+  cursor: pointer;
+  border-bottom: 1px solid #fff;
+}
+div.panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+
+.aboutus__img { 
+  display: block;
+  max-width: 100%;
+  list-style: none;
+  margin: 75px 0 0 0;
+}
+
+
+/*****************OUR WORK***********************/
+
+.ourwork {
+  background: #fff;
+  color: #222222;
+  height: 100%;
+  padding: 110px 0 115px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.ourwork__title{
+font-family: 'Raleway';
+font-size: 35px;
+font-weight: 700;
+line-height: 60px;
+}
+/*                       SLIDER                  */
+.ourwork__sl{
+  max-width: 700px;
+  margin: 80px auto;
+}
+
+.sl__slide{
+  position: relative;
+}
+
+.sl__text{
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  color: #fff;
+}
+
+
+/*                 VIEW MORE             */
+
+
+.gallery {
+  width: 100%;
+  margin: 100px auto;
+ 
+}
+@media (max-width: 800px){
+  .gallery { 
+ padding: 0 5px 0 20px;
+}
+}
+.gallery li { 
+  max-width:32%;
+  padding: 5px 0;
+  display:none;
+  float: left;
+  list-style: none;
+  margin-right: 10px;
+}
+@media (max-width: 468px){
+  .gallery li { 
+ margin: 0 auto;
+}
+}
+.more, .less {
+     border: 3px solid black;
+      color: black;
+      width: 183px;
+      height: 60px;
+      margin: 20px 0;
+      background: transparent;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 60px;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      cursor: pointer;
+      outline: none;
+      transition: background 0.5s ease;
+}
+/****************************GET IN TOUCH********************************/
+
+.contactus {
+  background: url('../img/footerbg.jpg') 50% 50% no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  height: 802px;
+  text-align: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contactus__title {
+  padding: 118px 0 0 0;
+  font-family: 'Raleway';
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+
+.info__icons {
+  padding: 69px 15px;
+}
+
+.info__icons:hover{
+  opacity: 0.8;
+}
+
+.form {
+  max-width: 669px;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+
+/* Row */
+
+.form__row {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+/* Field */
+
+.form__input {
+  width: 100%;
+  margin: 0 0 50px 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 3px solid #afafaf;
+  color: #676767;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 40px;
+  background: transparent;
+}
+
+.form__input:hover{
+  opacity: 0.8;
+}
+
+.form__input~.form__input {
+  margin-left: 63px;
+}
+
+.form__submit{
+      border: 3px solid #ffffff;
+      color: #ffffff;
+      width: 183px;
+      height: 60px;
+      background: transparent;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 60px;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      cursor: pointer;
+      outline: none;
+      transition: background 0.5s ease;
+    }
