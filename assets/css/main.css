@@ -416,7 +416,7 @@ align-items: center;
 }
 
 .gallery li { 
-  max-width:33%;
+
   list-style: none;
   margin: 0 5px;
 }
